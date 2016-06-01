@@ -7,6 +7,7 @@ Meteor.startup(() => {
 
 		Recipes.insert({
 			title: 'Rusty Chicken Thighs',
+			imageUrl: 'http://images.media-allrecipes.com/userphotos/720x405/1353642.jpg',
 			ingredients: [
 				'1 clove garlic, sliced, or more to taste',
 				'2 teaspoons Asian chile pepper sauce (such as sambal oelek), or more to taste',
@@ -30,6 +31,7 @@ Meteor.startup(() => {
 
 		Recipes.insert({
 			title: 'Tater Tot Taco Casserole',
+			imageUrl: 'http://images.media-allrecipes.com/userphotos/720x405/1095717.jpg',
 			ingredients: [
 				'1 pound ground beef',
 				'1 small onion, diced',

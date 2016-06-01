@@ -1,0 +1,29 @@
+.Header 
+	background-color $indigo
+	position relative
+	width 100%
+	height 60px
+	.navMenu		
+		center(1200px)
+		position relative
+		transform translate(0, 100%)			
+		.titleApp
+			column(1/2)						
+			a
+				@extend .mixin-link
+		.buttonsSign
+			column(1/2)
+			display inline-flex
+			color $title-color
+			font-size $font-size-buttons-sign
+			font-family $roboto
+			li				
+				width 50%				
+				text-align center				
+				a
+					@extend .mixin-link
+					font-size $font-size-buttons-sign
+		
+			
+	
+

@@ -3,9 +3,11 @@ import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 const App = (props) => (
-  <MuiThemeProvider muiTheme={getMuiTheme()}>
+  <div className="AppContainer">
+  	<MuiThemeProvider muiTheme={getMuiTheme()}>
     { props.children }
-  </MuiThemeProvider>
+  	</MuiThemeProvider>
+  </div>  
 );
 
 export default App;

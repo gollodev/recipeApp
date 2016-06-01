@@ -9,6 +9,10 @@ Recipes.schema = new SimpleSchema({
 		label: 'Title', 
 		max: 100
 	},
+	imageUrl: {
+		type: String,
+		label: 'Image URL'
+	},
 	ingredients: { 
 		type: [String],
 		label: 'Ingredients'
