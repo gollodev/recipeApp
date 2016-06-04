@@ -9,6 +9,12 @@ Recipes.schema = new SimpleSchema({
 		label: 'Title', 
 		max: 100
 	},
+	description: {
+		type: String,
+		label: 'Description',
+		min: 20,
+		max: 600
+	},
 	imageUrl: {
 		type: String,
 		label: 'Image URL'

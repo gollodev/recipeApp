@@ -7,6 +7,7 @@ Meteor.startup(() => {
 
 		Recipes.insert({
 			title: 'Rusty Chicken Thighs',
+			description: "I'm going to show you how to make this incredibly simple and highly effective grilled chicken marinade. It's so perfect and juicy and flavorful. It's an overall gorgeous way to grill chicken.",
 			imageUrl: 'http://images.media-allrecipes.com/userphotos/720x405/1353642.jpg',
 			ingredients: [
 				'1 clove garlic, sliced, or more to taste',
@@ -31,6 +32,7 @@ Meteor.startup(() => {
 
 		Recipes.insert({
 			title: 'Tater Tot Taco Casserole',
+			description: "Just what the grandkids ordered. Tater tots, Mexican food, and cheese! This is one of those meals that you can throw together with ingredients you would normally have on hand. Great for pot luck or a quick meal for unexpected company. Some kids don't like onion or garlic; these can be omitted.",
 			imageUrl: 'http://images.media-allrecipes.com/userphotos/720x405/1095717.jpg',
 			ingredients: [
 				'1 pound ground beef',
@@ -50,6 +52,29 @@ Meteor.startup(() => {
 				'Pour about 1/3 of the enchilada sauce into the bottom of the prepared baking dish. Add the tater tot mixture to the baking dish; lightly pat the mixture down into a solid, even layer. Pour the remaining enchilada sauce over the tater tot layer.',
 				'Bake in the preheated oven for 40 minutes. Sprinkle the remaining Mexican cheese over the casserole and return to oven until the cheese is melted and bubbly, about 5 minutes more.'
 
+			],
+			author: 'admin'
+		});
+
+		Recipes.insert({
+			title: 'Buffalo Chicken Pasta Salad',
+			description: "For anyone who likes Buffalo wings, this is a great change of pace from normal pasta salad. Really popular as a side dish for a barbeque or just about any gathering you can think of. You can substitute or add many different vegetables with this recipe.",
+			imageUrl: 'http://images.media-allrecipes.com/userphotos/720x405/657345.jpg',
+			ingredients: [
+				'1 (16 ounce) package uncooked rotini pasta',
+				'1/2 cup mayonnaise',
+				'1 cup chunky blue cheese dressing',
+				'1/2 cup buffalo wing sauce',
+				'1 teaspoon salt',
+				'1/2 teaspoon black pepper',
+				'1 pound frozen cooked chicken strips, defrosted and diced',
+				'1/2 cup red bell pepper, diced',
+				'1/2 cup green bell pepper, diced',
+				'1 cup red onion, diced'
+			],
+			directions: [
+				'Fill a large pot with lightly salted water and bring to a rolling boil over high heat. Once the water is boiling, stir in the rotini, and return to a boil. Cook uncovered, stirring occasionally, until the pasta has cooked through, but is still firm to the bite, about 8 minutes. Drain well in a colander set in the sink.',
+				'Stir together the mayonnaise, blue cheese dressing, buffalo wing sauce, salt and pepper in a large bowl. Add the chicken, bell peppers, red onion, and cooked pasta and toss to coat with the dressing. Cover and chill at least 1 hour in the refrigerator before serving.'
 			],
 			author: 'admin'
 		});
