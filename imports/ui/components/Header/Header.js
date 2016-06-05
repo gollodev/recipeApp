@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Header = () => (
-	<div className="Header">
+	<div className="Header">		
 		<nav className="navMenu">
 			<div className="titleApp">
 				<a href="/">RecipeApp</a>

@@ -3,8 +3,7 @@ import RecipeListItem from '../RecipeListItem/RecipeListItem';
 
 class RecipeList  extends Component {
 	render() {		
-		const { recipes } = this.props;
-		console.log(recipes);
+		const { recipes } = this.props;		
 		return (			
 			<div className="RecipeList">
 				{ 
