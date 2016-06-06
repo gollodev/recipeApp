@@ -10,7 +10,7 @@ const renderRoutes = () => (
   <Router history={browserHistory}>
     <Route path="/" component={AppContainer}>
       <IndexRoute component={RecipeContainer} />      
-      <Route path="*" component={NotFoundPage}/>
+      <Route path="*" component={NotFoundPage}/>      
     </Route>
   </Router>
 );

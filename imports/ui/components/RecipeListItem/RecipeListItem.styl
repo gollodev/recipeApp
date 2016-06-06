@@ -1,7 +1,14 @@
 .RecipeListItem
 	width 100%
-	.CardItem	
-		column(1/3)
+	.CardItem			
+		+mobile()
+			column(1/1)
+		+tablet()
+			column(1/1)
+		+desktop()
+			column(1/2)
+		+hd()
+			column(1/3)		
 		height auto	
 		margin-right 12px !important
 		margin-left 12px

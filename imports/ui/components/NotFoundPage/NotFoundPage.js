@@ -1,8 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 const NotFoundPage = () => (
-	<div>
-		<p>Not Found Page</p>
+	<div className="NotFoundPage">
+		<p>Not Found Page :(</p>	
+		<Link to="/">Back to Home!</Link>	
 	</div>	
 );
 
