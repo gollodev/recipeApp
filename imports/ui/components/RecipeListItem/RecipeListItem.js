@@ -1,4 +1,5 @@
 import React, { Component, PropTypes } from 'react';
+import { Link } from 'react-router';
 import { 
 	Card,
 	CardHeader,
@@ -8,20 +9,23 @@ import {
 	CardTitle
 } from 'material-ui';
 
-class RecipeListItem extends Component {
+class RecipeListItem extends Component {	
+
 	render() {
 		const { id, title, description, image, author } = this.props;		
 		return (
 			<div className="RecipeListItem">
-				<Card className="CardItem">
-					<CardHeader
-						title={title}
-					/>
-					<CardMedia
-						overlay={<CardTitle title={title} />}    
-					>						
-						<img src={image}/>
-					</CardMedia>					
+				<Card className="cardItem">
+					<Link to={`/${id}`}>
+						<CardHeader											
+							title={title}
+						/>
+						<CardMedia						
+							overlay={<CardTitle title={title} />}    
+						>						
+							<img src={image}/>
+						</CardMedia>
+					</Link>														
 					<CardText>	
 						{description}
 					</CardText>	
