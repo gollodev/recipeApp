@@ -12,7 +12,7 @@ const renderRoutes = () => (
   <Router history={browserHistory}>
     <Route path="/" component={AppContainer}>
       <IndexRoute component={RecipeContainer} />      
-      <Route path="/:recipe" component={RecipeDetailContainer} />
+      <Route path="/:recipeId" component={RecipeDetailContainer} />
       <Route path="*" component={NotFoundPage}/>      
     </Route>
   </Router>
